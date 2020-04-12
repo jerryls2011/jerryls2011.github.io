@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2/core/common_omp.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,16 +64,29 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_20697b8f204bdfcab31e6b1a416f3ab8.html">caffe2</a></li><li class="navelem"><a class="el" href="dir_78eec69ac3a4b32ad49d9e5fc7146850.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">common_omp.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CAFFE2_CORE_COMMON_OMP_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CAFFE2_CORE_COMMON_OMP_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;omp.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#endif // _OPENMP</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif // CAFFE2_CORE_COMMON_OMP_H_</span></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 12 2020 23:28:03 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 12 2020 23:28:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2::internal::OperatorNode Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,11 +64,43 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="structcaffe2_1_1internal_1_1OperatorNode.html">OperatorNode</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">caffe2::internal::OperatorNode Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a96bc1ce3d25b587e5a40b39bd45803f1"><td class="memItemLeft" align="right" valign="top"><a id="a96bc1ce3d25b587e5a40b39bd45803f1"></a>
+unique_ptr&lt; <a class="el" href="classcaffe2_1_1OperatorBase.html">OperatorBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator_</b></td></tr>
+<tr class="separator:a96bc1ce3d25b587e5a40b39bd45803f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c8aa3e67af5cd3f2efc1b58fbfa172"><td class="memItemLeft" align="right" valign="top"><a id="a78c8aa3e67af5cd3f2efc1b58fbfa172"></a>
+vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>children_</b></td></tr>
+<tr class="separator:a78c8aa3e67af5cd3f2efc1b58fbfa172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e623083fc58d7ebc054b98f11f20b1"><td class="memItemLeft" align="right" valign="top"><a id="a33e623083fc58d7ebc054b98f11f20b1"></a>
+vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parents_</b></td></tr>
+<tr class="separator:a33e623083fc58d7ebc054b98f11f20b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a829b0baa1cdefa4af32b2d82a16c6e"><td class="memItemLeft" align="right" valign="top"><a id="a5a829b0baa1cdefa4af32b2d82a16c6e"></a>
+std::atomic&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>runtime_parent_count_</b></td></tr>
+<tr class="separator:a5a829b0baa1cdefa4af32b2d82a16c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7f9ca7f5ded1316c321f9b0c10baa7"><td class="memItemLeft" align="right" valign="top"><a id="a1c7f9ca7f5ded1316c321f9b0c10baa7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_chain_start_</b> = false</td></tr>
+<tr class="separator:a1c7f9ca7f5ded1316c321f9b0c10baa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="net_8h_source.html#l00158">158</a> of file <a class="el" href="net_8h_source.html">net.h</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>caffe2/core/<a class="el" href="net_8h_source.html">net.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->

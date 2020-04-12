@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2/transforms/conv_to_nnpack_transform.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,16 +64,49 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_20697b8f204bdfcab31e6b1a416f3ab8.html">caffe2</a></li><li class="navelem"><a class="el" href="dir_b2f416cc81d4569c4b22fb538a26e089.html">transforms</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">conv_to_nnpack_transform.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;caffe2/core/common.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;caffe2/proto/caffe2.pb.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;caffe2/transforms/single_op_transform.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;caffe2/utils/proto_utils.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacecaffe2.html">caffe2</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classcaffe2_1_1ConvToNNPackTransform.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcaffe2_1_1ConvToNNPackTransform.html">ConvToNNPackTransform</a> : <span class="keyword">public</span> <a class="code" href="classcaffe2_1_1SingleOpTransform.html">SingleOpTransform</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="comment">// Specify what the op needs to be to match the pattern.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">bool</span> MatchOperator(<span class="keyword">const</span> OperatorDef&amp; op)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> (</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        op.type() == <span class="stringliteral">&quot;Conv&quot;</span> &amp;&amp; op.device_option().device_type() == CPU &amp;&amp;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        op.engine() != <span class="stringliteral">&quot;NNPACK&quot;</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">// Specify how the operator should be replaced.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> ReplaceOperator(OperatorDef* op)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    op-&gt;set_engine(<span class="stringliteral">&quot;NNPACK&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace caffe2</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclasscaffe2_1_1ConvToNNPackTransform_html"><div class="ttname"><a href="classcaffe2_1_1ConvToNNPackTransform.html">caffe2::ConvToNNPackTransform</a></div><div class="ttdef"><b>Definition:</b> <a href="conv__to__nnpack__transform_8h_source.html#l00010">conv_to_nnpack_transform.h:10</a></div></div>
+<div class="ttc" id="anamespacecaffe2_html"><div class="ttname"><a href="namespacecaffe2.html">caffe2</a></div><div class="ttdoc">Simple registry implementation in Caffe2 that uses static variables to register object creators durin...</div><div class="ttdef"><b>Definition:</b> <a href="convert__encoded__to__raw__leveldb_8cc_source.html#l00031">convert_encoded_to_raw_leveldb.cc:31</a></div></div>
+<div class="ttc" id="aclasscaffe2_1_1SingleOpTransform_html"><div class="ttname"><a href="classcaffe2_1_1SingleOpTransform.html">caffe2::SingleOpTransform</a></div><div class="ttdoc">Single Op Transform Base class.</div><div class="ttdef"><b>Definition:</b> <a href="single__op__transform_8h_source.html#l00018">single_op_transform.h:18</a></div></div>
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 12 2020 23:28:03 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 12 2020 23:28:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

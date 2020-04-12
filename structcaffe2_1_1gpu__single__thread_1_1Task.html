@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2::gpu_single_thread::Task Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,11 +64,43 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><a class="el" href="namespacecaffe2_1_1gpu__single__thread.html">gpu_single_thread</a></li><li class="navelem"><a class="el" href="structcaffe2_1_1gpu__single__thread_1_1Task.html">Task</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">caffe2::gpu_single_thread::Task Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a92bf52b46c2bdcb155ba198c652f57de"><td class="memItemLeft" align="right" valign="top"><a id="a92bf52b46c2bdcb155ba198c652f57de"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="classcaffe2_1_1OperatorBase.html">OperatorBase</a> &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>ops_</b></td></tr>
+<tr class="separator:a92bf52b46c2bdcb155ba198c652f57de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d5513932eb5ec22cf6802f384dac33"><td class="memItemLeft" align="right" valign="top"><a id="a76d5513932eb5ec22cf6802f384dac33"></a>
+std::condition_variable *&#160;</td><td class="memItemRight" valign="bottom"><b>cv_</b></td></tr>
+<tr class="separator:a76d5513932eb5ec22cf6802f384dac33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e210b42b0de42aee12730ebefe2de5"><td class="memItemLeft" align="right" valign="top"><a id="a29e210b42b0de42aee12730ebefe2de5"></a>
+std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><b>mtx_</b></td></tr>
+<tr class="separator:a29e210b42b0de42aee12730ebefe2de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be74dcbf8602f08fe1e4c6bbcfa8cbe"><td class="memItemLeft" align="right" valign="top"><a id="a1be74dcbf8602f08fe1e4c6bbcfa8cbe"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>stream_id_</b></td></tr>
+<tr class="separator:a1be74dcbf8602f08fe1e4c6bbcfa8cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa974c0ad32174480b5f2a0f02d0d724b"><td class="memItemLeft" align="right" valign="top"><a id="aa974c0ad32174480b5f2a0f02d0d724b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>done_</b> = false</td></tr>
+<tr class="separator:aa974c0ad32174480b5f2a0f02d0d724b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="net__gpu_8h_source.html#l00052">52</a> of file <a class="el" href="net__gpu_8h_source.html">net_gpu.h</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>caffe2/core/<a class="el" href="net__gpu_8h_source.html">net_gpu.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->

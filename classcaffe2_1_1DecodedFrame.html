@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2::DecodedFrame Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,16 +64,70 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><a class="el" href="classcaffe2_1_1DecodedFrame.html">DecodedFrame</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">caffe2::DecodedFrame Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcaffe2_1_1DecodedFrame_1_1avDeleter.html">avDeleter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a9f3ffa1d4ab2a31765b53aa55c7017f6"><td class="memItemLeft" align="right" valign="top"><a id="a9f3ffa1d4ab2a31765b53aa55c7017f6"></a>
+typedef std::unique_ptr&lt; uint8_t, <a class="el" href="structcaffe2_1_1DecodedFrame_1_1avDeleter.html">avDeleter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AvDataPtr</b></td></tr>
+<tr class="separator:a9f3ffa1d4ab2a31765b53aa55c7017f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a6eb0344428d49d10a69e9c92b536dc42"><td class="memItemLeft" align="right" valign="top"><a id="a6eb0344428d49d10a69e9c92b536dc42"></a>
+AvDataPtr&#160;</td><td class="memItemRight" valign="bottom"><b>data_</b></td></tr>
+<tr class="separator:a6eb0344428d49d10a69e9c92b536dc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d763061be6449c5b3ee567dca52afe"><td class="memItemLeft" align="right" valign="top"><a id="a64d763061be6449c5b3ee567dca52afe"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>size_</b> = 0</td></tr>
+<tr class="separator:a64d763061be6449c5b3ee567dca52afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e3d070b922017b418ea3b7177f094f"><td class="memItemLeft" align="right" valign="top"><a id="a27e3d070b922017b418ea3b7177f094f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>width_</b> = 0</td></tr>
+<tr class="separator:a27e3d070b922017b418ea3b7177f094f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4294f52ded592511e76b92471c996a2"><td class="memItemLeft" align="right" valign="top"><a id="aa4294f52ded592511e76b92471c996a2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>height_</b> = 0</td></tr>
+<tr class="separator:aa4294f52ded592511e76b92471c996a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a273c817722d8a7ac088ea007a051a"><td class="memItemLeft" align="right" valign="top"><a id="a09a273c817722d8a7ac088ea007a051a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>timestamp_</b> = 0</td></tr>
+<tr class="separator:a09a273c817722d8a7ac088ea007a051a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adb649a20c32d90e9d3372e4c5b44d6"><td class="memItemLeft" align="right" valign="top"><a id="a7adb649a20c32d90e9d3372e4c5b44d6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>keyFrame_</b> = false</td></tr>
+<tr class="separator:a7adb649a20c32d90e9d3372e4c5b44d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ca1e837c20aa91674799a5f232a19b"><td class="memItemLeft" align="right" valign="top"><a id="ab6ca1e837c20aa91674799a5f232a19b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>index_</b> = -1</td></tr>
+<tr class="separator:ab6ca1e837c20aa91674799a5f232a19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87532d8ca943bf470d669f29d4e54562"><td class="memItemLeft" align="right" valign="top"><a id="a87532d8ca943bf470d669f29d4e54562"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>outputFrameIndex_</b> = -1</td></tr>
+<tr class="separator:a87532d8ca943bf470d669f29d4e54562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="video__decoder_8h_source.html#l00151">151</a> of file <a class="el" href="video__decoder_8h_source.html">video_decoder.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>caffe2/video/<a class="el" href="video__decoder_8h_source.html">video_decoder.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 12 2020 23:28:03 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 12 2020 23:28:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

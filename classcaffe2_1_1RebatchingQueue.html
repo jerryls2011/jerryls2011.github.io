@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2::RebatchingQueue Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,16 +64,58 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><a class="el" href="classcaffe2_1_1RebatchingQueue.html">RebatchingQueue</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">caffe2::RebatchingQueue Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6791b96bbe1fe778f5398b5f9d3d5744"><td class="memItemLeft" align="right" valign="top"><a id="a6791b96bbe1fe778f5398b5f9d3d5744"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RebatchingQueue</b> (size_t capacity, size_t numBlobs)</td></tr>
+<tr class="separator:a6791b96bbe1fe778f5398b5f9d3d5744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae42afb7fa0864bfd81ea2884738735f0"><td class="memItemLeft" align="right" valign="top"><a id="ae42afb7fa0864bfd81ea2884738735f0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enqueueOne</b> (<a class="el" href="classcaffe2_1_1CPUContext.html">CPUContext</a> &amp;context, const std::vector&lt; const <a class="el" href="classcaffe2_1_1Tensor.html">TensorCPU</a> * &gt; &amp;inputs)</td></tr>
+<tr class="separator:ae42afb7fa0864bfd81ea2884738735f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704d1657441b170010070a6532502f94"><td class="memItemLeft" align="right" valign="top"><a id="a704d1657441b170010070a6532502f94"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>enqueueMany</b> (<a class="el" href="classcaffe2_1_1CPUContext.html">CPUContext</a> &amp;context, const std::vector&lt; const <a class="el" href="classcaffe2_1_1Tensor.html">TensorCPU</a> * &gt; &amp;inputs)</td></tr>
+<tr class="separator:a704d1657441b170010070a6532502f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd6bd55de5f1ef663cc6b2946a7458e"><td class="memItemLeft" align="right" valign="top"><a id="aecd6bd55de5f1ef663cc6b2946a7458e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dequeue</b> (<a class="el" href="classcaffe2_1_1CPUContext.html">CPUContext</a> &amp;context, size_t numElements, const std::vector&lt; <a class="el" href="classcaffe2_1_1Tensor.html">TensorCPU</a> * &gt; &amp;outputs)</td></tr>
+<tr class="separator:aecd6bd55de5f1ef663cc6b2946a7458e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eeaf6820a2dc023e3ecdd72cfbc2e4e"><td class="memItemLeft" align="right" valign="top"><a id="a8eeaf6820a2dc023e3ecdd72cfbc2e4e"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b> () const</td></tr>
+<tr class="separator:a8eeaf6820a2dc023e3ecdd72cfbc2e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7fe49da85341c925e5fca016d0c338e"><td class="memItemLeft" align="right" valign="top"><a id="ac7fe49da85341c925e5fca016d0c338e"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>numBlobs</b> () const</td></tr>
+<tr class="separator:ac7fe49da85341c925e5fca016d0c338e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d34f2896c88bfd9b3f66f3f0ea0443"><td class="memItemLeft" align="right" valign="top"><a id="ae3d34f2896c88bfd9b3f66f3f0ea0443"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isClosed</b> () const</td></tr>
+<tr class="separator:ae3d34f2896c88bfd9b3f66f3f0ea0443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06df194ebda18a50b3f497ab00a8127d"><td class="memItemLeft" align="right" valign="top"><a id="a06df194ebda18a50b3f497ab00a8127d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr>
+<tr class="separator:a06df194ebda18a50b3f497ab00a8127d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="rebatching__queue_8h_source.html#l00020">20</a> of file <a class="el" href="rebatching__queue_8h_source.html">rebatching_queue.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>caffe2/queue/<a class="el" href="rebatching__queue_8h_source.html">rebatching_queue.h</a></li>
+<li>caffe2/queue/<a class="el" href="rebatching__queue_8cc_source.html">rebatching_queue.cc</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 12 2020 23:28:03 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 12 2020 23:28:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

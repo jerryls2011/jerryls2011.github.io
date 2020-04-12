@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2::TensorDeserializer&lt; Context &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,16 +64,58 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><a class="el" href="classcaffe2_1_1TensorDeserializer.html">TensorDeserializer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">caffe2::TensorDeserializer&lt; Context &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classcaffe2_1_1TensorDeserializer.html" title="TensorDeserializer is the deserializer for Tensors.">TensorDeserializer</a> is the deserializer for Tensors.  
+ <a href="classcaffe2_1_1TensorDeserializer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="blob__serialization_8h_source.html">blob_serialization.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for caffe2::TensorDeserializer&lt; Context &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcaffe2_1_1TensorDeserializer.png" usemap="#caffe2::TensorDeserializer_3C_20Context_20_3E_map" alt=""/>
+  <map id="caffe2::TensorDeserializer_3C_20Context_20_3E_map" name="caffe2::TensorDeserializer_3C_20Context_20_3E_map">
+<area href="classcaffe2_1_1BlobDeserializerBase.html" title="BlobDeserializerBase is an abstract class that deserializes a blob from a BlobProto or a TensorProto." alt="caffe2::BlobDeserializerBase" shape="rect" coords="0,0,227,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4baae854fa0ecc91cb15477f0da14111"><td class="memItemLeft" align="right" valign="top"><a id="a4baae854fa0ecc91cb15477f0da14111"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deserialize</b> (const BlobProto &amp;proto, <a class="el" href="classcaffe2_1_1Blob.html">Blob</a> *blob) override</td></tr>
+<tr class="separator:a4baae854fa0ecc91cb15477f0da14111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c65347891a9db823fa0cc316844393"><td class="memItemLeft" align="right" valign="top"><a id="a07c65347891a9db823fa0cc316844393"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deserialize</b> (const TensorProto &amp;proto, <a class="el" href="classcaffe2_1_1Tensor.html">Tensor</a>&lt; Context &gt; *tensor)</td></tr>
+<tr class="separator:a07c65347891a9db823fa0cc316844393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class Context&gt;<br />
+class caffe2::TensorDeserializer&lt; Context &gt;</h3>
+
+<p><a class="el" href="classcaffe2_1_1TensorDeserializer.html" title="TensorDeserializer is the deserializer for Tensors.">TensorDeserializer</a> is the deserializer for Tensors. </p>
+<p>The device that the deserialized <a class="el" href="classcaffe2_1_1Tensor.html" title="Tensor is the basic class in Caffe2 that stores a contiguous memory with its shape information.">Tensor</a> will live under is determined by the device_detail field. If you want to specify the device of the deserialized tensor, change the TensorProto's corresponding fields before calling Deserialize. </p>
+
+<p class="definition">Definition at line <a class="el" href="blob__serialization_8h_source.html#l00101">101</a> of file <a class="el" href="blob__serialization_8h_source.html">blob_serialization.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>caffe2/core/<a class="el" href="blob__serialization_8h_source.html">blob_serialization.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 12 2020 23:28:03 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 12 2020 23:28:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

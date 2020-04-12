@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2::FixedDivisor&lt; int32_t &gt; Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,16 +64,54 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><a class="el" href="classcaffe2_1_1FixedDivisor_3_01int32__t_01_4.html">FixedDivisor&lt; int32_t &gt;</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">caffe2::FixedDivisor&lt; int32_t &gt; Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7575c8c361c24efcd3eca219cddd5d80"><td class="memItemLeft" align="right" valign="top"><a id="a7575c8c361c24efcd3eca219cddd5d80"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FixedDivisor</b> (int32_t d)</td></tr>
+<tr class="separator:a7575c8c361c24efcd3eca219cddd5d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4513722e6412b3021974d20ae867e22d"><td class="memItemLeft" align="right" valign="top"><a id="a4513722e6412b3021974d20ae867e22d"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>getMagic</b> () const</td></tr>
+<tr class="separator:a4513722e6412b3021974d20ae867e22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad446f54ee7fa5c14103d8f95d6283121"><td class="memItemLeft" align="right" valign="top"><a id="ad446f54ee7fa5c14103d8f95d6283121"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getShift</b> () const</td></tr>
+<tr class="separator:ad446f54ee7fa5c14103d8f95d6283121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab781ebcc08cfd5d5f333cae6f2ebfa82"><td class="memItemLeft" align="right" valign="top"><a id="ab781ebcc08cfd5d5f333cae6f2ebfa82"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1FixedDivisor_3_01int32__t_01_4.html#ab781ebcc08cfd5d5f333cae6f2ebfa82">div</a> (int32_t n) const</td></tr>
+<tr class="memdesc:ab781ebcc08cfd5d5f333cae6f2ebfa82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates <code>q = n / d</code>. <br /></td></tr>
+<tr class="separator:ab781ebcc08cfd5d5f333cae6f2ebfa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac282ebbc5a27667652f1c202f780bf62"><td class="memItemLeft" align="right" valign="top"><a id="ac282ebbc5a27667652f1c202f780bf62"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1FixedDivisor_3_01int32__t_01_4.html#ac282ebbc5a27667652f1c202f780bf62">mod</a> (int32_t n) const</td></tr>
+<tr class="memdesc:ac282ebbc5a27667652f1c202f780bf62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates <code>r = n % d</code>. <br /></td></tr>
+<tr class="separator:ac282ebbc5a27667652f1c202f780bf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8747fc823f45a630f685c62375985b0"><td class="memItemLeft" align="right" valign="top"><a id="ad8747fc823f45a630f685c62375985b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1FixedDivisor_3_01int32__t_01_4.html#ad8747fc823f45a630f685c62375985b0">divMod</a> (int32_t n, int32_t &amp;q, int32_t &amp;r) const</td></tr>
+<tr class="memdesc:ad8747fc823f45a630f685c62375985b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates <code>q = n / d</code> and <code>r = n % d</code> together. <br /></td></tr>
+<tr class="separator:ad8747fc823f45a630f685c62375985b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="fixed__divisor_8h_source.html#l00019">19</a> of file <a class="el" href="fixed__divisor_8h_source.html">fixed_divisor.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>caffe2/utils/<a class="el" href="fixed__divisor_8h_source.html">fixed_divisor.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 12 2020 23:28:03 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 12 2020 23:28:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

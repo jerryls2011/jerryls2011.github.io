@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2::internal::Stream Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,11 +64,44 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="structcaffe2_1_1internal_1_1Stream.html">Stream</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">caffe2::internal::Stream Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af91654d063434ef7d52eaa07d0a50655"><td class="memItemLeft" align="right" valign="top"><a id="af91654d063434ef7d52eaa07d0a50655"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Stream</b> (const DeviceOption &amp;device_option)</td></tr>
+<tr class="separator:af91654d063434ef7d52eaa07d0a50655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5f7a8553a902030ccfafb35f347396"><td class="memItemLeft" align="right" valign="top"><a id="afd5f7a8553a902030ccfafb35f347396"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>wait</b> (<a class="el" href="structcaffe2_1_1internal_1_1Event.html">Event</a> *event) const</td></tr>
+<tr class="separator:afd5f7a8553a902030ccfafb35f347396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ac62216c796d174350d1091453502622f"><td class="memItemLeft" align="right" valign="top"><a id="ac62216c796d174350d1091453502622f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>gpu_id_</b> {-1}</td></tr>
+<tr class="separator:ac62216c796d174350d1091453502622f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d67ff7c955da5e8ed2f1b84ca2dd66"><td class="memItemLeft" align="right" valign="top"><a id="a09d67ff7c955da5e8ed2f1b84ca2dd66"></a>
+cudaStream_t&#160;</td><td class="memItemRight" valign="bottom"><b>stream_</b> {nullptr}</td></tr>
+<tr class="separator:a09d67ff7c955da5e8ed2f1b84ca2dd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="net__gpu_8cc_source.html#l00079">79</a> of file <a class="el" href="net__gpu_8cc_source.html">net_gpu.cc</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>caffe2/core/<a class="el" href="net__gpu_8cc_source.html">net_gpu.cc</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2::db::RocksDBTransaction Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,11 +64,52 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><b>db</b></li><li class="navelem"><a class="el" href="classcaffe2_1_1db_1_1RocksDBTransaction.html">RocksDBTransaction</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">caffe2::db::RocksDBTransaction Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for caffe2::db::RocksDBTransaction:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcaffe2_1_1db_1_1RocksDBTransaction.png" usemap="#caffe2::db::RocksDBTransaction_map" alt=""/>
+  <map id="caffe2::db::RocksDBTransaction_map" name="caffe2::db::RocksDBTransaction_map">
+<area href="classcaffe2_1_1db_1_1Transaction.html" title="An abstract class for the current database transaction while writing." alt="caffe2::db::Transaction" shape="rect" coords="0,0,191,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a48c88f6d7d4ad201077fdf40a75504a9"><td class="memItemLeft" align="right" valign="top"><a id="a48c88f6d7d4ad201077fdf40a75504a9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RocksDBTransaction</b> (rocksdb::DB *db)</td></tr>
+<tr class="separator:a48c88f6d7d4ad201077fdf40a75504a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ab57b5412a5b6686266ebacf1e0e04"><td class="memItemLeft" align="right" valign="top"><a id="aa0ab57b5412a5b6686266ebacf1e0e04"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1db_1_1RocksDBTransaction.html#aa0ab57b5412a5b6686266ebacf1e0e04">Put</a> (const string &amp;key, const string &amp;value) override</td></tr>
+<tr class="memdesc:aa0ab57b5412a5b6686266ebacf1e0e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the key value pair to the database. <br /></td></tr>
+<tr class="separator:aa0ab57b5412a5b6686266ebacf1e0e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1657e217b010d19a1f4571d87969c311"><td class="memItemLeft" align="right" valign="top"><a id="a1657e217b010d19a1f4571d87969c311"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1db_1_1RocksDBTransaction.html#a1657e217b010d19a1f4571d87969c311">Commit</a> () override</td></tr>
+<tr class="memdesc:a1657e217b010d19a1f4571d87969c311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commits the current writes. <br /></td></tr>
+<tr class="separator:a1657e217b010d19a1f4571d87969c311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classcaffe2_1_1db_1_1Transaction"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcaffe2_1_1db_1_1Transaction')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcaffe2_1_1db_1_1Transaction.html">caffe2::db::Transaction</a></td></tr>
+<tr class="memitem:a8e4eff3f588388976f6ca29a5acca63d inherit pub_methods_classcaffe2_1_1db_1_1Transaction"><td class="memItemLeft" align="right" valign="top"><a id="a8e4eff3f588388976f6ca29a5acca63d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1db_1_1Transaction.html">Transaction</a>)</td></tr>
+<tr class="separator:a8e4eff3f588388976f6ca29a5acca63d inherit pub_methods_classcaffe2_1_1db_1_1Transaction"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="rocksdb_8cc_source.html#l00032">32</a> of file <a class="el" href="rocksdb_8cc_source.html">rocksdb.cc</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>caffe2/db/<a class="el" href="rocksdb_8cc_source.html">rocksdb.cc</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->

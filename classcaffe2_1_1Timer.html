@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Caffe2 - C++ API: Main Page</title>
+<title>Caffe2 - C++ API: caffe2::Timer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="/static/favicon.png" type="image/x-icon">
 <script type="text/javascript" src="jquery.js"></script>
@@ -50,7 +50,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,16 +64,83 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecaffe2.html">caffe2</a></li><li class="navelem"><a class="el" href="classcaffe2_1_1Timer.html">Timer</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">Caffe2 - C++ API Documentation</div>  </div>
+<div class="title">caffe2::Timer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A simple timer object for measuring time.  
+ <a href="classcaffe2_1_1Timer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="timer_8h_source.html">timer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a933bac61d50c3696a1fdcabd4acf039b"><td class="memItemLeft" align="right" valign="top"><a id="a933bac61d50c3696a1fdcabd4acf039b"></a>
+typedef std::chrono::high_resolution_clock&#160;</td><td class="memItemRight" valign="bottom"><b>clock</b></td></tr>
+<tr class="separator:a933bac61d50c3696a1fdcabd4acf039b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b55894a1067b9966948fa43521f435"><td class="memItemLeft" align="right" valign="top"><a id="a80b55894a1067b9966948fa43521f435"></a>
+typedef std::chrono::nanoseconds&#160;</td><td class="memItemRight" valign="bottom"><b>ns</b></td></tr>
+<tr class="separator:a80b55894a1067b9966948fa43521f435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2cd2082f328f09afdae05de39ccb04f0"><td class="memItemLeft" align="right" valign="top"><a id="a2cd2082f328f09afdae05de39ccb04f0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1Timer.html#a2cd2082f328f09afdae05de39ccb04f0">Start</a> ()</td></tr>
+<tr class="memdesc:a2cd2082f328f09afdae05de39ccb04f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a timer. <br /></td></tr>
+<tr class="separator:a2cd2082f328f09afdae05de39ccb04f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c866081680e4561bb375e496d2d0340"><td class="memItemLeft" align="right" valign="top"><a id="a9c866081680e4561bb375e496d2d0340"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>NanoSeconds</b> ()</td></tr>
+<tr class="separator:a9c866081680e4561bb375e496d2d0340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea6eac523d6882b96f005aa39dc2edf"><td class="memItemLeft" align="right" valign="top"><a id="aeea6eac523d6882b96f005aa39dc2edf"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1Timer.html#aeea6eac523d6882b96f005aa39dc2edf">MilliSeconds</a> ()</td></tr>
+<tr class="memdesc:aeea6eac523d6882b96f005aa39dc2edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the elapsed time in milliseconds. <br /></td></tr>
+<tr class="separator:aeea6eac523d6882b96f005aa39dc2edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c7ffbd7426e2f8a1ce166a1072b75d"><td class="memItemLeft" align="right" valign="top"><a id="a24c7ffbd7426e2f8a1ce166a1072b75d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1Timer.html#a24c7ffbd7426e2f8a1ce166a1072b75d">MicroSeconds</a> ()</td></tr>
+<tr class="memdesc:a24c7ffbd7426e2f8a1ce166a1072b75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the elapsed time in microseconds. <br /></td></tr>
+<tr class="separator:a24c7ffbd7426e2f8a1ce166a1072b75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc35e7a74a38dcc7a1114bf46067e94"><td class="memItemLeft" align="right" valign="top"><a id="a0bc35e7a74a38dcc7a1114bf46067e94"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcaffe2_1_1Timer.html#a0bc35e7a74a38dcc7a1114bf46067e94">Seconds</a> ()</td></tr>
+<tr class="memdesc:a0bc35e7a74a38dcc7a1114bf46067e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the elapsed time in seconds. <br /></td></tr>
+<tr class="separator:a0bc35e7a74a38dcc7a1114bf46067e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a1dd0f58633547d993b3d18bb63b673d3"><td class="memItemLeft" align="right" valign="top"><a id="a1dd0f58633547d993b3d18bb63b673d3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_COPY_AND_ASSIGN</b> (<a class="el" href="classcaffe2_1_1Timer.html">Timer</a>)</td></tr>
+<tr class="separator:a1dd0f58633547d993b3d18bb63b673d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a2ae87ddb77f8dd252122c520b84aaaef"><td class="memItemLeft" align="right" valign="top"><a id="a2ae87ddb77f8dd252122c520b84aaaef"></a>
+std::chrono::time_point&lt; clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>start_time_</b></td></tr>
+<tr class="separator:a2ae87ddb77f8dd252122c520b84aaaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple timer object for measuring time. </p>
+<p>This is a minimal class around a std::chrono::high_resolution_clock that serves as a utility class for testing code. </p>
+
+<p class="definition">Definition at line <a class="el" href="timer_8h_source.html#l00016">16</a> of file <a class="el" href="timer_8h_source.html">timer.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>caffe2/core/<a class="el" href="timer_8h_source.html">timer.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.14-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 12 2020 23:28:03 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 12 2020 23:28:02 for Caffe2 - C++ API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
